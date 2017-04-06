@@ -5,12 +5,14 @@ using UnityEngine;
 public class PlayerContlloer : MonoBehaviour {
 
 	Rigidbody2D rigid2D;
+	Animator animator;
 	float jumpForce = 680.0f; // ジャンプする力
 	float walkForce = 30.0f; // 歩く力
 	float maxWalkSpeed = 2.0f; // 歩く最大のスピード
 
 	void Start () {
 		this.rigid2D = GetComponent<Rigidbody2D> ();
+		this.animator = GetComponent<Animator> ();
 	}
 
 	void Update () {
@@ -39,5 +41,8 @@ public class PlayerContlloer : MonoBehaviour {
 		if (key != 0) {
 			transform.localScale = new Vector3(key, 1, 1);
 		}
+
+		// プレイヤの速度に応じてアニメーション速度を帰る
+		this.animator.speed = speedx / 2.0f;
 	}
 }
