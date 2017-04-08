@@ -20,7 +20,7 @@ public class PlayerContlloer : MonoBehaviour {
 	void Update () {
 
 		//ジャンプする
-		if (Input.GetMouseButtonDown (0) && Mathf.Abs(this.rigid2D.velocity.y) <= 0.4f) {
+		if (Input.GetMouseButtonDown (0) || Input.GetKeyDown(KeyCode.UpArrow) && Mathf.Abs(this.rigid2D.velocity.y) <= 0.4f) { // スマホ用に画面タッチ、pc用に上キーを設定
 			this.animator.SetTrigger ("JumpTrigger");
 			this.rigid2D.AddForce (transform.up * this.jumpForce); // 上方向ベクトルにjapmForceをかける
 		}
