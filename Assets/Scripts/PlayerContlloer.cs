@@ -44,5 +44,11 @@ public class PlayerContlloer : MonoBehaviour {
 
 		// プレイヤの速度に応じてアニメーション速度を帰る
 		this.animator.speed = speedx / 2.0f;
+
+	}
+
+	//  ゴールに到達
+	void OnTriggerEnter2D(Collider2D other){
+		Debug.Log ("ゴール");
 	}
 }
