@@ -626,6 +626,10 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.Input
 
+		//System.Boolean UnityEngine.Input::GetKeyDownInt(System.Int32)
+		void Register_UnityEngine_Input_GetKeyDownInt();
+		Register_UnityEngine_Input_GetKeyDownInt();
+
 		//System.Boolean UnityEngine.Input::GetKeyInt(System.Int32)
 		void Register_UnityEngine_Input_GetKeyInt();
 		Register_UnityEngine_Input_GetKeyInt();

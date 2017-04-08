@@ -134,6 +134,7 @@ UnityEngine.GameObject::get_transform
 UnityEngine.Gradient::Cleanup
 UnityEngine.Gradient::Init
 UnityEngine.GUILayer::INTERNAL_CALL_HitTest
+UnityEngine.Input::GetKeyDownInt
 UnityEngine.Input::GetKeyInt
 UnityEngine.Input::GetMouseButton
 UnityEngine.Input::GetMouseButtonDown

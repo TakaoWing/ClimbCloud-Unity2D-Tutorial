@@ -657,6 +657,7 @@ extern const uint32_t GameObject_GetComponentsInChildren_m993725821_MetadataUsag
 extern const uint32_t GameObject_GetComponentsInParent_m1568786844_MetadataUsageId;
 extern Il2CppClass* Input_t1785128008_il2cpp_TypeInfo_var;
 extern const uint32_t Input_GetKey_m3849524999_MetadataUsageId;
+extern const uint32_t Input_GetKeyDown_m1771960377_MetadataUsageId;
 extern const uint32_t Input_get_mousePosition_m146923508_MetadataUsageId;
 extern const uint32_t Input_get_acceleration_m2886343410_MetadataUsageId;
 extern const uint32_t Input__cctor_m829848544_MetadataUsageId;
@@ -2100,6 +2101,8 @@ extern "C"  String_t* HumanBone_get_humanName_m2091758568 (HumanBone_t1529896151
 extern "C"  void HumanBone_set_humanName_m1385708911 (HumanBone_t1529896151 * __this, String_t* ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.Input::GetKeyInt(System.Int32)
 extern "C"  bool Input_GetKeyInt_m4143570188 (Il2CppObject * __this /* static, unused */, int32_t ___key0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean UnityEngine.Input::GetKeyDownInt(System.Int32)
+extern "C"  bool Input_GetKeyDownInt_m2930607648 (Il2CppObject * __this /* static, unused */, int32_t ___key0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Input::INTERNAL_get_mousePosition(UnityEngine.Vector3&)
 extern "C"  void Input_INTERNAL_get_mousePosition_m2302165941 (Il2CppObject * __this /* static, unused */, Vector3_t2243707580 * ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Input::INTERNAL_get_acceleration(UnityEngine.Vector3&)
@@ -13618,6 +13621,15 @@ extern "C"  bool Input_GetKeyInt_m4143570188 (Il2CppObject * __this /* static, u
 	_il2cpp_icall_func = (Input_GetKeyInt_m4143570188_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Input::GetKeyInt(System.Int32)");
 	return _il2cpp_icall_func(___key0);
 }
+// System.Boolean UnityEngine.Input::GetKeyDownInt(System.Int32)
+extern "C"  bool Input_GetKeyDownInt_m2930607648 (Il2CppObject * __this /* static, unused */, int32_t ___key0, const MethodInfo* method)
+{
+	typedef bool (*Input_GetKeyDownInt_m2930607648_ftn) (int32_t);
+	static Input_GetKeyDownInt_m2930607648_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Input_GetKeyDownInt_m2930607648_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Input::GetKeyDownInt(System.Int32)");
+	return _il2cpp_icall_func(___key0);
+}
 // System.Boolean UnityEngine.Input::GetKey(UnityEngine.KeyCode)
 extern "C"  bool Input_GetKey_m3849524999 (Il2CppObject * __this /* static, unused */, int32_t ___key0, const MethodInfo* method)
 {
@@ -13632,6 +13644,30 @@ extern "C"  bool Input_GetKey_m3849524999 (Il2CppObject * __this /* static, unus
 		int32_t L_0 = ___key0;
 		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
 		bool L_1 = Input_GetKeyInt_m4143570188(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		goto IL_000d;
+	}
+
+IL_000d:
+	{
+		bool L_2 = V_0;
+		return L_2;
+	}
+}
+// System.Boolean UnityEngine.Input::GetKeyDown(UnityEngine.KeyCode)
+extern "C"  bool Input_GetKeyDown_m1771960377 (Il2CppObject * __this /* static, unused */, int32_t ___key0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Input_GetKeyDown_m1771960377_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	{
+		int32_t L_0 = ___key0;
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
+		bool L_1 = Input_GetKeyDownInt_m2930607648(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
 		goto IL_000d;
 	}

@@ -7877,7 +7877,9 @@ extern "C" void HumanBone_set_boneName_m2410239828_AdjustorThunk ();
 extern "C" void HumanBone_get_humanName_m2091758568_AdjustorThunk ();
 extern "C" void HumanBone_set_humanName_m1385708911_AdjustorThunk ();
 extern "C" void Input_GetKeyInt_m4143570188 ();
+extern "C" void Input_GetKeyDownInt_m2930607648 ();
 extern "C" void Input_GetKey_m3849524999 ();
+extern "C" void Input_GetKeyDown_m1771960377 ();
 extern "C" void Input_GetMouseButton_m464100923 ();
 extern "C" void Input_GetMouseButtonDown_m47917805 ();
 extern "C" void Input_get_mousePosition_m146923508 ();
@@ -8432,7 +8434,7 @@ extern "C" void PlayerContlloer__ctor_m3702302840 ();
 extern "C" void PlayerContlloer_Start_m725173868 ();
 extern "C" void PlayerContlloer_Update_m1452356499 ();
 extern "C" void PlayerContlloer_OnTriggerEnter2D_m3485695988 ();
-extern const Il2CppMethodPointer g_MethodPointers[8418] = 
+extern const Il2CppMethodPointer g_MethodPointers[8420] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -16297,7 +16299,9 @@ extern const Il2CppMethodPointer g_MethodPointers[8418] =
 	HumanBone_get_humanName_m2091758568_AdjustorThunk,
 	HumanBone_set_humanName_m1385708911_AdjustorThunk,
 	Input_GetKeyInt_m4143570188,
+	Input_GetKeyDownInt_m2930607648,
 	Input_GetKey_m3849524999,
+	Input_GetKeyDown_m1771960377,
 	Input_GetMouseButton_m464100923,
 	Input_GetMouseButtonDown_m47917805,
 	Input_get_mousePosition_m146923508,
