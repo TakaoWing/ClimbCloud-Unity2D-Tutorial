@@ -179,6 +179,7 @@
 #include "UnityEngine_UnityEngine_HumanBone1529896151.h"
 #include "UnityEngine_UnityEngine_HumanLimit250797648.h"
 #include "UnityEngine_UnityEngine_Input1785128008.h"
+#include "UnityEngine_UnityEngine_KeyCode2283395152.h"
 #include "UnityEngine_UnityEngine_Internal_DefaultValueAttri1027170048.h"
 #include "UnityEngine_UnityEngine_Internal_ExcludeFromDocsAtt665825653.h"
 #include "UnityEngine_UnityEngine_iOS_CalendarIdentifier259698391.h"
@@ -655,6 +656,7 @@ extern const uint32_t GameObject_GetComponents_m297658252_MetadataUsageId;
 extern const uint32_t GameObject_GetComponentsInChildren_m993725821_MetadataUsageId;
 extern const uint32_t GameObject_GetComponentsInParent_m1568786844_MetadataUsageId;
 extern Il2CppClass* Input_t1785128008_il2cpp_TypeInfo_var;
+extern const uint32_t Input_GetKey_m3849524999_MetadataUsageId;
 extern const uint32_t Input_get_mousePosition_m146923508_MetadataUsageId;
 extern const uint32_t Input_get_acceleration_m2886343410_MetadataUsageId;
 extern const uint32_t Input__cctor_m829848544_MetadataUsageId;
@@ -1490,6 +1492,8 @@ extern "C"  String_t* AnimationEvent_get_functionName_m4178006856 (AnimationEven
 extern "C"  float AnimationEvent_get_time_m2837507241 (AnimationEvent_t2428323300 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Single::GetHashCode()
 extern "C"  int32_t Single_GetHashCode_m3102305584 (float* __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Animator::SetTriggerString(System.String)
+extern "C"  void Animator_SetTriggerString_m2002790359 (Animator_t69676727 * __this, String_t* ___name0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.String::op_Equality(System.String,System.String)
 extern "C"  bool String_op_Equality_m1790663636 (Il2CppObject * __this /* static, unused */, String_t* p0, String_t* p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String UnityEngine.AnimatorControllerParameter::get_name()
@@ -2094,6 +2098,8 @@ extern "C"  void HumanBone_set_boneName_m2410239828 (HumanBone_t1529896151 * __t
 extern "C"  String_t* HumanBone_get_humanName_m2091758568 (HumanBone_t1529896151 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.HumanBone::set_humanName(System.String)
 extern "C"  void HumanBone_set_humanName_m1385708911 (HumanBone_t1529896151 * __this, String_t* ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean UnityEngine.Input::GetKeyInt(System.Int32)
+extern "C"  bool Input_GetKeyInt_m4143570188 (Il2CppObject * __this /* static, unused */, int32_t ___key0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Input::INTERNAL_get_mousePosition(UnityEngine.Vector3&)
 extern "C"  void Input_INTERNAL_get_mousePosition_m2302165941 (Il2CppObject * __this /* static, unused */, Vector3_t2243707580 * ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Input::INTERNAL_get_acceleration(UnityEngine.Vector3&)
@@ -3858,6 +3864,15 @@ IL_0031:
 		return L_6;
 	}
 }
+// System.Void UnityEngine.Animator::SetTrigger(System.String)
+extern "C"  void Animator_SetTrigger_m3418492570 (Animator_t69676727 * __this, String_t* ___name0, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = ___name0;
+		Animator_SetTriggerString_m2002790359(__this, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
 // System.Void UnityEngine.Animator::set_speed(System.Single)
 extern "C"  void Animator_set_speed_m3511108817 (Animator_t69676727 * __this, float ___value0, const MethodInfo* method)
 {
@@ -3875,6 +3890,15 @@ extern "C"  int32_t Animator_StringToHash_m3313850714 (Il2CppObject * __this /* 
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Animator_StringToHash_m3313850714_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Animator::StringToHash(System.String)");
 	return _il2cpp_icall_func(___name0);
+}
+// System.Void UnityEngine.Animator::SetTriggerString(System.String)
+extern "C"  void Animator_SetTriggerString_m2002790359 (Animator_t69676727 * __this, String_t* ___name0, const MethodInfo* method)
+{
+	typedef void (*Animator_SetTriggerString_m2002790359_ftn) (Animator_t69676727 *, String_t*);
+	static Animator_SetTriggerString_m2002790359_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Animator_SetTriggerString_m2002790359_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Animator::SetTriggerString(System.String)");
+	_il2cpp_icall_func(__this, ___name0);
 }
 // System.String UnityEngine.AnimatorControllerParameter::get_name()
 extern "C"  String_t* AnimatorControllerParameter_get_name_m1366583724 (AnimatorControllerParameter_t1381019216 * __this, const MethodInfo* method)
@@ -13584,6 +13608,39 @@ extern "C"  void HumanBone_set_humanName_m1385708911_AdjustorThunk (Il2CppObject
 {
 	HumanBone_t1529896151 * _thisAdjusted = reinterpret_cast<HumanBone_t1529896151 *>(__this + 1);
 	HumanBone_set_humanName_m1385708911(_thisAdjusted, ___value0, method);
+}
+// System.Boolean UnityEngine.Input::GetKeyInt(System.Int32)
+extern "C"  bool Input_GetKeyInt_m4143570188 (Il2CppObject * __this /* static, unused */, int32_t ___key0, const MethodInfo* method)
+{
+	typedef bool (*Input_GetKeyInt_m4143570188_ftn) (int32_t);
+	static Input_GetKeyInt_m4143570188_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Input_GetKeyInt_m4143570188_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Input::GetKeyInt(System.Int32)");
+	return _il2cpp_icall_func(___key0);
+}
+// System.Boolean UnityEngine.Input::GetKey(UnityEngine.KeyCode)
+extern "C"  bool Input_GetKey_m3849524999 (Il2CppObject * __this /* static, unused */, int32_t ___key0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Input_GetKey_m3849524999_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	{
+		int32_t L_0 = ___key0;
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
+		bool L_1 = Input_GetKeyInt_m4143570188(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		goto IL_000d;
+	}
+
+IL_000d:
+	{
+		bool L_2 = V_0;
+		return L_2;
+	}
 }
 // System.Boolean UnityEngine.Input::GetMouseButton(System.Int32)
 extern "C"  bool Input_GetMouseButton_m464100923 (Il2CppObject * __this /* static, unused */, int32_t ___button0, const MethodInfo* method)

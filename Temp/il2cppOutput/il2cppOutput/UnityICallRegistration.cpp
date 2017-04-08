@@ -98,6 +98,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Animator_StringToHash();
 		Register_UnityEngine_Animator_StringToHash();
 
+		//System.Void UnityEngine.Animator::SetTriggerString(System.String)
+		void Register_UnityEngine_Animator_SetTriggerString();
+		Register_UnityEngine_Animator_SetTriggerString();
+
 		//System.Void UnityEngine.Animator::set_speed(System.Single)
 		void Register_UnityEngine_Animator_set_speed();
 		Register_UnityEngine_Animator_set_speed();
@@ -621,6 +625,10 @@ void RegisterAllStrippedInternalCalls()
 	//End Registrations for type : UnityEngine.GUILayer
 
 	//Start Registrations for type : UnityEngine.Input
+
+		//System.Boolean UnityEngine.Input::GetKeyInt(System.Int32)
+		void Register_UnityEngine_Input_GetKeyInt();
+		Register_UnityEngine_Input_GetKeyInt();
 
 		//System.Boolean UnityEngine.Input::GetMouseButton(System.Int32)
 		void Register_UnityEngine_Input_GetMouseButton();

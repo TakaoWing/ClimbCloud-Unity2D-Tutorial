@@ -46,8 +46,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\ClearDirector.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Scripts\ClearDirector.cs" />
      <Compile Include="Assets\Scripts\PlayerContlloer.cs" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>/Users/Shared/Unity/ClimbCloud/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>

@@ -19,6 +19,7 @@ UnityEngine.Analytics.UnityAnalyticsHandler::SendCustomEventName
 UnityEngine.AnimationCurve::Cleanup
 UnityEngine.AnimationCurve::Init
 UnityEngine.Animator::StringToHash
+UnityEngine.Animator::SetTriggerString
 UnityEngine.Animator::set_speed
 UnityEngine.AssetBundleCreateRequest::DisableCompatibilityChecks
 UnityEngine.AssetBundleCreateRequest::get_assetBundle
@@ -133,6 +134,7 @@ UnityEngine.GameObject::get_transform
 UnityEngine.Gradient::Cleanup
 UnityEngine.Gradient::Init
 UnityEngine.GUILayer::INTERNAL_CALL_HitTest
+UnityEngine.Input::GetKeyInt
 UnityEngine.Input::GetMouseButton
 UnityEngine.Input::GetMouseButtonDown
 UnityEngine.Input::INTERNAL_get_acceleration

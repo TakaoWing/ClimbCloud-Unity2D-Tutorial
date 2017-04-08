@@ -15,10 +15,11 @@
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
+#include "UnityEngine_Analytics_UnityEngine_Analytics_Tracka1304606600.h"
 #include "UnityEngine_Analytics_UnityEngine_Analytics_Tracka2256174789.h"
 #include "AssemblyU2DCSharp_U3CModuleU3E3783534214.h"
-#include "AssemblyU2DCSharp_ClearDirector3163211679.h"
 #include "AssemblyU2DCSharp_CameraController3555666667.h"
+#include "AssemblyU2DCSharp_ClearDirector3163211679.h"
 #include "AssemblyU2DCSharp_PlayerContlloer2812031719.h"
 
 
@@ -32,8 +33,14 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1400 = { sizeof (FieldWithTarget_t2256174789), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1400[6] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1400 = { sizeof (TrackableProperty_t1304606600), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1400[2] = 
+{
+	0,
+	TrackableProperty_t1304606600::get_offset_of_m_Fields_1(),
+};
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1401 = { sizeof (FieldWithTarget_t2256174789), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1401[6] = 
 {
 	FieldWithTarget_t2256174789::get_offset_of_m_ParamName_0(),
 	FieldWithTarget_t2256174789::get_offset_of_m_Target_1(),
@@ -42,15 +49,15 @@ extern const int32_t g_FieldOffsetTable1400[6] =
 	FieldWithTarget_t2256174789::get_offset_of_m_DoStatic_4(),
 	FieldWithTarget_t2256174789::get_offset_of_m_StaticString_5(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1401 = { sizeof (U3CModuleU3E_t3783534220), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1402 = { sizeof (ClearDirector_t3163211679), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1402 = { sizeof (U3CModuleU3E_t3783534220), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1403 = { sizeof (CameraController_t3555666667), -1, 0, 0 };
 extern const int32_t g_FieldOffsetTable1403[1] = 
 {
 	CameraController_t3555666667::get_offset_of_player_2(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1404 = { sizeof (PlayerContlloer_t2812031719), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1404[6] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1404 = { sizeof (ClearDirector_t3163211679), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1405 = { sizeof (PlayerContlloer_t2812031719), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1405[6] = 
 {
 	PlayerContlloer_t2812031719::get_offset_of_rigid2D_2(),
 	PlayerContlloer_t2812031719::get_offset_of_animator_3(),

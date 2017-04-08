@@ -7365,8 +7365,10 @@ extern "C" void AnimationEvent_get_animationState_m1069191380 ();
 extern "C" void AnimationEvent_get_animatorStateInfo_m4255437518 ();
 extern "C" void AnimationEvent_get_animatorClipInfo_m615328956 ();
 extern "C" void AnimationEvent_GetHash_m2850593057 ();
+extern "C" void Animator_SetTrigger_m3418492570 ();
 extern "C" void Animator_set_speed_m3511108817 ();
 extern "C" void Animator_StringToHash_m3313850714 ();
+extern "C" void Animator_SetTriggerString_m2002790359 ();
 extern "C" void AnimatorControllerParameter_get_name_m1366583724 ();
 extern "C" void AnimatorControllerParameter_Equals_m2765773032 ();
 extern "C" void AnimatorControllerParameter_GetHashCode_m2591556684 ();
@@ -7874,6 +7876,8 @@ extern "C" void HumanBone_get_boneName_m1281040133_AdjustorThunk ();
 extern "C" void HumanBone_set_boneName_m2410239828_AdjustorThunk ();
 extern "C" void HumanBone_get_humanName_m2091758568_AdjustorThunk ();
 extern "C" void HumanBone_set_humanName_m1385708911_AdjustorThunk ();
+extern "C" void Input_GetKeyInt_m4143570188 ();
+extern "C" void Input_GetKey_m3849524999 ();
 extern "C" void Input_GetMouseButton_m464100923 ();
 extern "C" void Input_GetMouseButtonDown_m47917805 ();
 extern "C" void Input_get_mousePosition_m146923508 ();
@@ -8428,7 +8432,7 @@ extern "C" void PlayerContlloer__ctor_m3702302840 ();
 extern "C" void PlayerContlloer_Start_m725173868 ();
 extern "C" void PlayerContlloer_Update_m1452356499 ();
 extern "C" void PlayerContlloer_OnTriggerEnter2D_m3485695988 ();
-extern const Il2CppMethodPointer g_MethodPointers[8414] = 
+extern const Il2CppMethodPointer g_MethodPointers[8418] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -15781,8 +15785,10 @@ extern const Il2CppMethodPointer g_MethodPointers[8414] =
 	AnimationEvent_get_animatorStateInfo_m4255437518,
 	AnimationEvent_get_animatorClipInfo_m615328956,
 	AnimationEvent_GetHash_m2850593057,
+	Animator_SetTrigger_m3418492570,
 	Animator_set_speed_m3511108817,
 	Animator_StringToHash_m3313850714,
+	Animator_SetTriggerString_m2002790359,
 	AnimatorControllerParameter_get_name_m1366583724,
 	AnimatorControllerParameter_Equals_m2765773032,
 	AnimatorControllerParameter_GetHashCode_m2591556684,
@@ -16290,6 +16296,8 @@ extern const Il2CppMethodPointer g_MethodPointers[8414] =
 	HumanBone_set_boneName_m2410239828_AdjustorThunk,
 	HumanBone_get_humanName_m2091758568_AdjustorThunk,
 	HumanBone_set_humanName_m1385708911_AdjustorThunk,
+	Input_GetKeyInt_m4143570188,
+	Input_GetKey_m3849524999,
 	Input_GetMouseButton_m464100923,
 	Input_GetMouseButtonDown_m47917805,
 	Input_get_mousePosition_m146923508,
